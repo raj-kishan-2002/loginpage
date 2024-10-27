@@ -1,0 +1,366 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin-top: 100px;
+    margin-left: 200px;
+    background-color: white;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #f0f2f5;
+    padding: 0 15px;
+}
+
+.facebook {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    width: 100%;
+    margin-right: 200px;
+}
+
+.facebook .text {
+    margin-bottom: 90px;
+}
+
+.facebook h1 {
+    font-size: 4rem;
+    color:#0866ff;
+    margin-bottom: 10px;
+}
+
+.facebook p {
+    font-size: 1.75rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    width: 100%;
+    background: #fff;
+    padding:20px ;
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.1) ,
+                          0px 5px 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+form input {
+    height: 55px;
+    width: 100%;
+    padding: 0 15px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+form input:focus {
+    outline:none;
+    border-color: #0866ff;
+}
+
+::placeholder {
+    color: #777;
+    font-size: 1.063rem;
+}
+
+.login-link {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+}
+
+.login-link .login-btn {
+    padding: 15px 0;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    background: #0866ff;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.login-link .login-btn:hover {
+    background: #0d65d9;
+}
+
+form a {
+    text-decoration: none;
+}
+
+.login-link .forgot-password {
+    text-decoration: none;
+    color: #0866ff;
+}
+
+.login-link .forgot-password:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background: #ccc;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.create-account {
+    margin-top: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.create-account a {
+    padding: 15px 20px;
+    background: #42b72a;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 1.063rem;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+.create-account a:hover {
+    background: #3ba626;
+}
+
+@media (max-width: 1000px) {
+    .facebook {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .facebook .text {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 500px) {
+    .facebook h1 {
+        font-size: 3.5rem;
+    }
+
+    .facebook p {
+        font-size: 1.3rem;
+    }
+
+    form {
+        padding: 15px;
+    }
+}
+
+                                                /* BOX-2 */
+
+body .container::after {
+    content: login-box2;
+}
+
+.login-box2 {
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    width: 1200px;
+    height: 900px;
+    border: 1px solid black;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    box-shadow: 5px 5px 10px 3px black;
+    background-image: url(https://images.hdqwalls.com/wallpapers/moon-over-mountain-ze.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+.login-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 500px;
+    width: 480px;
+    padding: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(8px);
+    box-shadow: 3px 3px 14px 1px #d2d2ec;
+}
+
+h2 {
+    font-size: 2.6rem;
+    color: rgb(206, 167, 167);
+}
+
+
+.input-1 {
+    border-bottom: 2px solid rgb(206, 167, 167);
+}
+.input-2 {
+    border-bottom: 2px solid rgb(206, 167, 167);
+}
+
+.input-info1 {
+    margin-right: 288px;
+    color:white;
+    font-weight:500;
+}
+
+.mail-input {
+    width: 400px;
+    height: 40px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+
+.input-info2 {
+    margin-right: 258px;
+    margin-top: 20px;
+    color:white;
+    font-weight:500;
+}
+
+.password-input {
+    width: 400px;
+    height: 40px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+
+.option-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px 0 35px 0;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.option-box label {
+    display: flex;
+    align-items: center;
+}
+
+.option-box label p {
+    margin-right: 150px;
+}
+
+.login-wrapper a {
+    color: #efefef;
+    text-decoration: none;
+}
+
+.login-wrapper a:hover{
+    text-decoration: underline;
+}
+
+button {
+    width: 90%;
+    margin-top: 30px;
+    margin-left: 17px;
+    background: rgb(206, 167, 167);
+    color: #000;
+    font-size: 1 rem;
+    font-weight:600;
+    padding: 12px 20px;
+    border-radius: 4px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+}
+
+.account-options {
+    text-align: center;
+    margin-top: 30px;
+    color: #fff;
+}
+
+.all {
+    margin-top: 20px;
+}
+
+
+
+/* BOX 3 */
+
+.card-container {
+    perspective: 1000px;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    height: 500px;
+    width: 600px;
+}
+
+.card {
+    width: 300px;
+    height: 400px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+
+.front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.back {
+    background-color: #fff;
+    transform: rotateY(180deg);
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.back h2 {
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.back p {
+    margin: 0;
+}
